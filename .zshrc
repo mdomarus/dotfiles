@@ -83,9 +83,6 @@ eval $(thefuck --alias)
 # git clone https://github.com/junegunn/fzf-git.sh.git
 source ~/fzf-git.sh/fzf-git.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 # Created by `pipx` on 2024-08-11 17:22:49
 export PATH="$PATH:/Users/michaldomarus/.local/bin"
@@ -106,3 +103,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 source ~/.config/op/plugins.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
