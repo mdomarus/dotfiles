@@ -116,6 +116,9 @@
 
 alt - b : open -a 'Arc'
 alt - m : open -a 'Airmail'
+alt - p : open -a 'Photos'
+alt + shift -p : open -a 'Photomator'
 alt - r : open -a 'Roon'
 alt - t : open -a 'kitty'
 alt - v : open -a 'Visual Studio Code'
+alt - w : open -a 'WhatsApp'

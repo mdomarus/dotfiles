@@ -20,7 +20,7 @@
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-font_size 13.0
+# font_size 13.0
 
 #: Font size (in pts).
 
@@ -2257,12 +2257,14 @@ font_size 13.0
 # map kitty_mod+right next_tab
 # map shift+cmd+]     next_tab
 # map ctrl+tab        next_tab
+map cmd+right           next_tab
 
 #: Previous tab
 
 # map kitty_mod+left previous_tab
 # map shift+cmd+[    previous_tab
 # map ctrl+shift+tab previous_tab
+map cmd+left           previous_tab
 
 #: New tab
 
@@ -2644,3 +2646,15 @@ font_size 13.0
 # Catppuccin-Frappe
 include current-theme.conf
 # END_KITTY_THEME
+
+# BEGIN_KITTY_FONTS
+font_family      family="MesloLGS NF"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
+
+font_size 16.0
+
+tab_bar_style       powerline
+tab_powerline_style slanted
