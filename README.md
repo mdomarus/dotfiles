@@ -5,6 +5,7 @@ brew install stow
 
 cd dotfiles
 stow .
+stow kitty
 ```
 
 ## skhd - keyboard shortcuts
