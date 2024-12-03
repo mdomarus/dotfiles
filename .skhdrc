@@ -117,7 +117,7 @@
 alt - b : open -a 'Arc'
 alt - m : open -a 'Airmail'
 alt - g : open -a 'GitKraken'
-ralt - n : open -a 'Notes'
+lalt - n : open -a 'Notes'
 alt - p : open -a 'Photos'
 alt + shift -p : open -a 'Photomator'
 alt - r : open -a 'Roon'
