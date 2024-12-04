@@ -80,9 +80,14 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)" # use z as better cd
 eval $(thefuck --alias)
 
-# git clone https://github.com/junegunn/fzf-git.sh.git
-source ~/fzf-git.sh/fzf-git.sh
+FZF_GIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/fzf-git/fzf-git.git"
 
+if [ ! -d "${FZF_GIT_HOME}" ]; then
+  mkdir -p "$(dirname $FZF_GIT_HOME)"
+  git clone https://github.com/junegunn/fzf-git.sh.git "$FZF_GIT_HOME"
+fi
+
+source "${FZF_GIT_HOME}/fzf-git.sh"
 
 # Created by `pipx` on 2024-08-11 17:22:49
 export PATH="$PATH:/Users/michaldomarus/.local/bin"
