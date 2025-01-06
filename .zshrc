@@ -66,12 +66,13 @@ export HOMEBREW_PREFIX=/opt/homebrew
 # brew install zoxide fzf bat tlrc httpie lazydocker
 
 # Aliases
+alias ..="cd .."
 alias c="code ."
-alias ls='ls --color'
-alias cd='z'
-alias ..='cd ..'
 alias cat="bat"
+alias cd="z"
 alias k="kubectl"
+alias ls="ls --color"
+alias icat="kitten icat"
 
 source <(kubectl completion zsh)
 
