@@ -65,6 +65,9 @@ export HOMEBREW_PREFIX=/opt/homebrew
 [[ -s "$HOMEBREW_PREFIX/opt/curl/bin/curl" ]] && export PATH="$HOMEBREW_PREFIX/opt/curl/bin/curl:${PATH}"
 # brew install zoxide fzf bat tlrc httpie lazydocker
 
+# for GPG
+export GPG_TTY=$(tty)
+
 # Aliases
 alias ..="cd .."
 alias c="code ."
@@ -108,7 +111,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-source ~/.config/op/plugins.sh
+if [ -f "~/.config/op/plugins.sh" ]; then
+  source ~/.config/op/plugins.sh
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -1,7 +1,12 @@
 [user]
 	name = Michał Domarus
 	email = mdomarus@gmail.com
+	signingKey = 563EACA1
 [init]
 	defaultBranch = main
 [color]
 	ui = auto
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
