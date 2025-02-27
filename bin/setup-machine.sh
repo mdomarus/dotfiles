@@ -13,6 +13,7 @@ function install_brew_packages() {
         gnupg
         kitty
         koekeishiya/formulae/skhd
+        kubectl
         pnpm
         stow
         thefuck
