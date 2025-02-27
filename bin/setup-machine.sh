@@ -1,6 +1,10 @@
 #!/bin/bash
 
-function install_packages() {
+function install_brew() {
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+}
+
+function install_brew_packages() {
     local packages=(
         bat
         fzf
@@ -9,6 +13,7 @@ function install_packages() {
         stow
         thefuck
         visual-studio-code
+        wget
         yazi
         zoxide
     )
@@ -20,6 +25,7 @@ function install_nvm() {
 }
 
 install_nvm
-install_packages
+install_brew
+install_brew_packages
 
 echo SUCCESS
