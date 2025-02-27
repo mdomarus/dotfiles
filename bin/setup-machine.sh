@@ -10,8 +10,10 @@ function install_brew_packages() {
     local packages=(
         bat
         fzf
+        gnupg
         kitty
         koekeishiya/formulae/skhd
+        pnpm
         stow
         thefuck
         visual-studio-code
