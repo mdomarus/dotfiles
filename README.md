@@ -8,4 +8,4 @@ stow .
 stow kitty
 ```
 
-Install `MesloLGS NF` fonts
+Install `MesloLGS NF` fonts from the `fonts` folder.
