@@ -11,12 +11,15 @@ function install_brew_packages() {
         bat
         fzf
         gnupg
+        httpie
         kitty
         koekeishiya/formulae/skhd
         kubectl
+        lazydocker
         pnpm
         stow
         thefuck
+        tlrc
         visual-studio-code
         wget
         yazi

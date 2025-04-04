@@ -6,8 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # PATH
-export PATH="/usr/local/bin/:$PATH"
-export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/bin/:$HOME/bin:~/.local/bin:$PATH"
 
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -63,9 +62,8 @@ export NVM_DIR="$HOME/.nvm"
 export HOMEBREW_PREFIX=/opt/homebrew
 [[ -s "$HOMEBREW_PREFIX/bin/brew" ]] && eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
 [[ -s "$HOMEBREW_PREFIX/opt/curl/bin/curl" ]] && export PATH="$HOMEBREW_PREFIX/opt/curl/bin/curl:${PATH}"
-# brew install zoxide fzf bat tlrc httpie lazydocker
 
-# for GPG
+# GPG
 export GPG_TTY=$(tty)
 
 # Aliases
@@ -93,8 +91,6 @@ fi
 
 source "${FZF_GIT_HOME}/fzf-git.sh"
 
-# Created by `pipx` on 2024-08-11 17:22:49
-export PATH="$PATH:~/.local/bin"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -118,12 +114,6 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # pnpm
 export PNPM_HOME="~/Library/pnpm"
 case ":$PATH:" in
@@ -131,3 +121,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
