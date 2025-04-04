@@ -1,21 +1,22 @@
 [user]
-	name = Michał Domarus
-	email = mdomarus@gmail.com
-	signingKey = 563EACA1
+name = Michał Domarus
+email = mdomarus@gmail.com
 [init]
-	defaultBranch = main
+defaultBranch = main
 [color]
-	ui = auto
+ui = auto
 [commit]
-	gpgsign = true
+gpgsign = true
 [tag]
-	gpgSign = true
-	forceSignAnnotated = false
+gpgSign = true
+forceSignAnnotated = false
 [gpg]
-	program = gpg
-	format = openpgp
+program = gpg
+format = openpgp
 [pull]
-	rebase = true
+rebase = true
 [gpg "ssh"]
-	program = 
-	allowedSignersFile = 
+program =
+allowedSignersFile =
+[include]
+path = ~/.gitconfig.local
