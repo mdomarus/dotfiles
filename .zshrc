@@ -94,7 +94,7 @@ fi
 source "${FZF_GIT_HOME}/fzf-git.sh"
 
 # Created by `pipx` on 2024-08-11 17:22:49
-export PATH="$PATH:/Users/michaldomarus/.local/bin"
+export PATH="$PATH:~/.local/bin"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

@@ -10,3 +10,12 @@
 	gpgsign = true
 [tag]
 	gpgSign = true
+	forceSignAnnotated = false
+[gpg]
+	program = gpg
+	format = openpgp
+[pull]
+	rebase = true
+[gpg "ssh"]
+	program = 
+	allowedSignersFile = 
