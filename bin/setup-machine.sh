@@ -16,6 +16,7 @@ function install_brew_packages() {
         koekeishiya/formulae/skhd
         kubectl
         lazydocker
+	nvim
         pnpm
         stow
         thefuck
