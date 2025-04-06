@@ -18,7 +18,8 @@ function install_brew_packages() {
         lazydocker
 	nvim
         pnpm
-        stow
+        ripgrep
+	stow
         thefuck
         tlrc
         visual-studio-code

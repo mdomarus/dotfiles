@@ -6,12 +6,12 @@ defaultBranch = main
 [color]
 ui = auto
 [commit]
-gpgsign = true
+	gpgsign = true
 [tag]
 gpgSign = true
 forceSignAnnotated = false
 [gpg]
-program = gpg
+	program = gpg
 format = openpgp
 [pull]
 rebase = true
