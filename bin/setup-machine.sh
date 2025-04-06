@@ -16,10 +16,10 @@ function install_brew_packages() {
         koekeishiya/formulae/skhd
         kubectl
         lazydocker
-	nvim
+        nvim
         pnpm
         ripgrep
-	stow
+        stow
         thefuck
         tlrc
         visual-studio-code
